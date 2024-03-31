@@ -1,3 +1,4 @@
+import Footer from "@/Components/Footer";
 import "./globals.css";
 import Header from "@/Components/Header";
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
