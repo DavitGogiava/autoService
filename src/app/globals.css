@@ -354,13 +354,13 @@ body {
   align-items: flex-start;
 }
 .footer-wrapper .footer-col.two {
-  width: 25%;
+  width: 20%;
 }
 .footer-wrapper .footer-col.three {
-  width: 25%;
+  width: 20%;
 }
 .footer-wrapper .footer-col.four {
-  width: 25%;
+  width: 35%;
 }
 
 .footer-wrapper .footer-col.one .footer-image-container {

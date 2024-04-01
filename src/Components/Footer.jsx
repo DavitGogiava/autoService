@@ -1,6 +1,28 @@
+'use client'
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import dynamic from 'next/dynamic';
+
+const Map = dynamic(() => import('./Map'), {
+  ssr: false
+})
+
+
 
 export default function Footer() {
+
+  const [map1Object, setMap1Object] = useState(null);
+  // use synchronize from 0l-ext to sync both the maps
+  useEffect(() => {
+    if(!map1Object) return;
+    var synchronize_21 = new Synchronize({ maps: [map1Object] });
+    return () => {
+      if(map1Object) map1Object.removeInteraction(synchronize_12);
+    }
+  }, [map1Object])
+
+
   return (
     <footer className="footer-wrapper">
       <section className="footer-col one">
@@ -20,14 +42,6 @@ export default function Footer() {
         </h5>
       </section>
       <section className="footer-col two">
-        <h3>Product</h3>
-        <ul className="col-mid-section">
-          <li>Top optimization</li>
-          <li>Bandwidth management</li>
-          <li>Network Visibility</li>
-        </ul>
-      </section>
-      <section className="footer-col three">
         <h3>General</h3>
         <ul className="col-mid-section">
           <li>Customers</li>
@@ -37,7 +51,7 @@ export default function Footer() {
           <li>Contact</li>
         </ul>
       </section>
-      <section className="footer-col four">
+      <section className="footer-col three">
         <h3>Social</h3>
         <ul className="col-mid-section">
           <li>Facebook</li>
@@ -45,6 +59,10 @@ export default function Footer() {
           <li>X</li>
           <li>Linkedin</li>
         </ul>
+      </section>
+      <section className="footer-col four">
+        <h3>Social</h3>
+        <Map />
       </section>
     </footer>
   );
