@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MagicButton from "../MagicButton";
 
 export default function Hero() {
   return (
@@ -10,16 +11,16 @@ export default function Hero() {
           вариант для вас.
         </p>
         <div className="button-wrapper">
-          <a href="req">Посмотреть все автомобили</a>
-          <a href="contact">Связаться с нами</a>
+          <MagicButton color={"red"} text={"все автомобили"} />
+          <MagicButton color={"white"} text={"Связаться с нами"} />
         </div>
       </div>
-      <div className="car-image">
+      <div className="car-image-hero">
         <Image
           src="/images/bmw.png"
-          height={520}
-          width={800}
-          alt="Your Name"
+          fill
+          alt="FooterLogo"
+          className="footerImage"
         />
       </div>
     </section>
