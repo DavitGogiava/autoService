@@ -57,7 +57,7 @@ export default function CardSlider() {
           className="cards-container"
           style={{
             transform: `translateX(-${
-              position * (20 + window.innerWidth * 0.2)
+              position * (20 + windowWidth * 0.2)
             }px)`,
           }}
         >
