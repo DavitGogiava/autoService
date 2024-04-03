@@ -9,23 +9,23 @@ export default function CardSlider() {
 
   const cards = [
     {
-      imageSrc: "/images/BMW.png",
+      imageSrc: "/images/bmw.png",
       text: "BMW Cupe 2018",
     },
     {
-      imageSrc: "/images/BMW.png",
+      imageSrc: "/images/bmw.png",
       text: "BMW Cupe 2018",
     },
     {
-      imageSrc: "/images/BMW.png",
+      imageSrc: "/images/bmw.png",
       text: "BMW Cupe 2018",
     },
     {
-      imageSrc: "/images/BMW.png",
+      imageSrc: "/images/bmw.png",
       text: "BMW Cupe 2018",
     },
     {
-      imageSrc: "/images/BMW.png",
+      imageSrc: "/images/bmw.png",
       text: "BMW Cupe 2018",
     },
   ];
