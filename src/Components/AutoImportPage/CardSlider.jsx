@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Rating } from "react-simple-star-rating";
 
 export default function CardSlider() {
