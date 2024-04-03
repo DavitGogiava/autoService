@@ -5,6 +5,7 @@ import { Rating } from "react-simple-star-rating";
 
 export default function CardSlider() {
   const [position, setPosition] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   const cards = [
     {
@@ -36,6 +37,13 @@ export default function CardSlider() {
   const handlePrev = () => {
     setPosition((prevPosition) => Math.max(prevPosition - 1, 0));
   };
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const middleIndex = position + 1;
 
