@@ -49,16 +49,30 @@ export default function CardSlider() {
 
   return (
     <section className="carousel-wrapper">
-      <button className="prevButton" onClick={handlePrev}>
-        Prev
-      </button>
+      <svg
+        className="carrousel-arrow"
+        height="50px"
+        width="50px"
+        viewBox="0 0 512 512"
+        fill="red"
+        onClick={handlePrev}
+      >
+        <g>
+          <g>
+            <path
+              d="M168.837,256L388.418,36.418c8.331-8.331,8.331-21.839,0-30.17c-8.331-8.331-21.839-8.331-30.17,0L123.582,240.915
+              c-8.331,8.331-8.331,21.839,0,30.17l234.667,234.667c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17
+              L168.837,256z"
+            />
+          </g>
+        </g>
+      </svg>
+
       <div className="carousel">
         <div
           className="cards-container"
           style={{
-            transform: `translateX(-${
-              position * (20 + windowWidth * 0.2)
-            }px)`,
+            transform: `translateX(-${position * (20 + windowWidth * 0.25)}px)`,
           }}
         >
           {cards.map((card, index) => (
@@ -78,9 +92,24 @@ export default function CardSlider() {
           ))}
         </div>
       </div>
-      <button className="nextButton" onClick={handleNext}>
-        Next
-      </button>
+      <svg
+        className="carrousel-arrow"
+        height="50px"
+        width="50px"
+        viewBox="0 0 512 512"
+        fill="red"
+        onClick={handleNext}
+      >
+        <g>
+          <g>
+            <path
+              d="M168.837,256L388.418,36.418c8.331-8.331,8.331-21.839,0-30.17c-8.331-8.331-21.839-8.331-30.17,0L123.582,240.915
+              c-8.331,8.331-8.331,21.839,0,30.17l234.667,234.667c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17
+              L168.837,256z"
+            />
+          </g>
+        </g>
+      </svg>
     </section>
   );
 }

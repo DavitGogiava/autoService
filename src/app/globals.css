@@ -1,8 +1,14 @@
+:root {
+  --red-col: #ef3f25;
+  --red-col-disabled: #ab2f1c;
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
   margin: 0;
   font-family: Helvetica;
+  user-select: none;
 }
 
 /* SCROLLBAR */
@@ -42,7 +48,7 @@ body {
 }
 
 .magic-button.red {
-  background-color: #ef3f25;
+  background-color: var(--red-col);
   color: white;
 }
 
@@ -79,12 +85,17 @@ body {
   height: 100%;
 }
 
+.logo img{
+  cursor: pointer;
+
+}
+
 .header-wrapper .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 40%;
+  width: 25%;
   margin-right: 2vw;
 }
 
@@ -92,6 +103,11 @@ body {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+.navigation a:hover{
+  color: var(--red-col);
 }
 
 /*LANDING PAGE*/
@@ -388,7 +404,29 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: black;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
 }
+
+
+.autoimport-wrapper .autoimport-title{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  width: calc(75vw + 60px);
+  font-size: 50px;
+}
+
+
+
+
+
+
+
 
 .autoimport-wrapper .carousel-wrapper{
   display: flex;
@@ -405,7 +443,7 @@ body {
   overflow: hidden;
   position: relative;
   color: white;
-  width: calc(60vw + 60px)
+  width: calc(75vw + 60px)
 }
 
 .cards-container {
@@ -417,7 +455,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 20vw;
+  width: 25vw;
   height: 50vh; /* Adjust the height as needed */
   border-radius: 10px;
   background-color: #080808;
@@ -453,13 +491,19 @@ body {
   background-color: #111111;
 }
 
-
-.carousel button{
-  position: absolute;
-  bottom: -50px;
-  width: 100px;
+.carousel-wrapper .carrousel-arrow{
+  cursor: pointer;
+  fill: var(--red-col-disabled);
+  transition: 0.3s ease-in-out;
 }
 
-.carousel .nextButton{
-  right: 0;
+.carousel-wrapper .carrousel-arrow:hover{
+  fill: var(--red-col);
+}
+.carousel-wrapper .carrousel-arrow:nth-child(1){
+  margin-right: 20px;
+}
+.carousel-wrapper .carrousel-arrow:nth-child(3){
+  transform: rotate(180deg);
+  margin-left: 20px;
 }
