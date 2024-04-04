@@ -17,6 +17,7 @@ export default function Catalogue() {
             <Image
               src="/images/hatchback.png"
               fill
+              sizes="100%"
               alt="Hatchback"
               className="car one"
             />
@@ -37,6 +38,7 @@ export default function Catalogue() {
             <Image
               src="/images/SUV.png"
               fill
+              sizes="100%"
               alt="SUV"
               className="car two"
             />
@@ -56,6 +58,7 @@ export default function Catalogue() {
             <Image
               src="/images/Coupe.png"
               fill
+              sizes="100%"
               alt="Coupe"
               className="car three"
             />

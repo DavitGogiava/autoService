@@ -11,6 +11,7 @@ export default function Logo() {
         <Image
           src="/images/Logo.png" // Route of the image file
           fill
+          sizes="100%"
           alt="Your Name"
           onClick={() => router.push('/')}
         />

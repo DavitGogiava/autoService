@@ -30,6 +30,7 @@ export default function Footer() {
           <Image
             src="/images/FooterLogo.png"
             fill
+            sizes="100%"
             alt="FooterLogo"
             className="footerImage"
           />

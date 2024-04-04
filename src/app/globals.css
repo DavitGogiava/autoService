@@ -87,6 +87,7 @@ html {
   width: 25%;
   height: 100%;
   margin-left: 20px;
+  position: relative;
 }
 
 .logo img {
@@ -156,6 +157,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .car-image-hero img {
@@ -397,6 +399,7 @@ html {
 .footer-wrapper .footer-col.one .footer-image-container {
   width: 60%;
   margin-top: 15px;
+  position: relative;
 }
 .footer-image-container img {
   object-fit: contain;
@@ -413,7 +416,7 @@ html {
 /*FOOTER*/
 .leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
   height: 60vh;
-  width: 40vh;
+  width: 60vh;
 }
 
 /* AUTOIMPORT PAGE */
@@ -570,6 +573,7 @@ html {
   }
 
   .header-wrapper .logo {
+    position: relative;
     margin-left: 5px;
     width: 60%;
   }

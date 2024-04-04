@@ -20,6 +20,7 @@ export default function Hero() {
           <Image
             src="/images/bmw.png"
             fill
+            sizes="100%"
             alt="FooterLogo"
             className="footerImage"
           />
