@@ -23,15 +23,15 @@ export default function Footer() {
             className="footerImage"
           />
         </div>
-        <h5>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa magnam
           quasi laborum voluptas architecto! Eius atque sunt id voluptatem
           maxime fuga explicabo blanditiis minus iste voluptas nisi aspernatur,
           ducimus similique.
-        </h5>
+        </p>
       </section>
       <section className="footer-col two">
-        <h3>General</h3>
+        <h2>General</h2>
         <ul className="col-mid-section">
           <li>Customers</li>
           <li>Newsroom</li>
@@ -41,7 +41,7 @@ export default function Footer() {
         </ul>
       </section>
       <section className="footer-col three">
-        <h3>Social</h3>
+        <h2>Social</h2>
         <ul className="col-mid-section">
           <li>Facebook</li>
           <li>Instagram</li>
@@ -50,7 +50,7 @@ export default function Footer() {
         </ul>
       </section>
       <section className="footer-col four">
-        <h3>Location</h3>
+        <h2>Location</h2>
         <Map />
       </section>
     </footer>

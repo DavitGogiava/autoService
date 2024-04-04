@@ -5,7 +5,7 @@ export default function Catalogue() {
     <section className="catalogue-wrapper">
       <div className="catalogue-container">
         <div className="row one">
-          <h3 className="car-text one">Hatchback</h3>
+          <h2 className="car-text one">Hatchback</h2>
           <Image
             src="/images/arrow-white.png"
             height={40}
@@ -24,7 +24,7 @@ export default function Catalogue() {
           </div>
         </div>
         <div className="row two">
-          <h3 className="car-text two">SUV</h3>
+          <h2 className="car-text two">SUV</h2>
 
           <Image
             src="/images/arrow-black.png"
@@ -45,7 +45,7 @@ export default function Catalogue() {
           </div>
         </div>
         <div className="row three">
-          <h3 className="car-text three">Coupe</h3>
+          <h2 className="car-text three">Coupe</h2>
 
           <Image
             src="/images/arrow-white.png"

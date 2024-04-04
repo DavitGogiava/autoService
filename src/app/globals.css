@@ -325,7 +325,7 @@ html {
   margin-right: 5vw;
 }
 
-.aboutus-wrapper .right-side-text h1 {
+.aboutus-wrapper .right-side-text h2 {
   font-size: 60px;
   margin: 0;
 }
@@ -375,9 +375,10 @@ html {
   padding-left: 20px;
 }
 
-.footer-wrapper .footer-col h3 {
+.footer-wrapper .footer-col h2 {
   color: grey;
   padding-top: 20px;
+  font-size: 20px;
 }
 
 .footer-wrapper .footer-col.one {
@@ -408,7 +409,7 @@ html {
   height: unset !important;
 }
 
-.footer-wrapper .footer-col.one h5 {
+.footer-wrapper .footer-col.one p {
   width: 90%;
   color: rgb(156, 156, 156);
 }
