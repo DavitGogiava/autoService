@@ -1,7 +1,5 @@
-'use client'
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
 
 const Map = dynamic(() => import('./Map'), {
@@ -11,16 +9,6 @@ const Map = dynamic(() => import('./Map'), {
 
 
 export default function Footer() {
-
-  const [map1Object, setMap1Object] = useState(null);
-  // use synchronize from 0l-ext to sync both the maps
-  useEffect(() => {
-    if(!map1Object) return;
-    var synchronize_21 = new Synchronize({ maps: [map1Object] });
-    return () => {
-      if(map1Object) map1Object.removeInteraction(synchronize_12);
-    }
-  }, [map1Object])
 
 
   return (
