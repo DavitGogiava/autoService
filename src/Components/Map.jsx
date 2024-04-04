@@ -11,7 +11,7 @@ export default function Map() {
   const mapRef = useRef();
 
   return (
-    <MapContainer center={center} zoom={ZOOM_LEVEL} ref={mapRef} style={{height: "60vh", width:"40vw"}}>
+    <MapContainer center={center} zoom={ZOOM_LEVEL} ref={mapRef}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

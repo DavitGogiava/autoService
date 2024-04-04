@@ -61,7 +61,7 @@ export default function Footer() {
         </ul>
       </section>
       <section className="footer-col four">
-        <h3>Social</h3>
+        <h3>Location</h3>
         <Map />
       </section>
     </footer>

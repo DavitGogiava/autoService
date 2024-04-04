@@ -15,13 +15,15 @@ export default function Hero() {
           <MagicButton color={"white"} text={"Связаться с нами"} />
         </div>
       </div>
-      <div className="car-image-hero">
-        <Image
-          src="/images/bmw.png"
-          fill
-          alt="FooterLogo"
-          className="footerImage"
-        />
+      <div className="hero-right">
+        <div className="car-image-hero">
+          <Image
+            src="/images/bmw.png"
+            fill
+            alt="FooterLogo"
+            className="footerImage"
+          />
+        </div>
       </div>
     </section>
   );

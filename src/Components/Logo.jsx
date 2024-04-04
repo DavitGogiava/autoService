@@ -10,8 +10,7 @@ export default function Logo() {
         <div className="logo">
         <Image
           src="/images/Logo.png" // Route of the image file
-          height={70} // Desired size with correct aspect ratio
-          width={300} // Desired size with correct aspect ratio
+          fill
           alt="Your Name"
           onClick={() => router.push('/')}
         />
