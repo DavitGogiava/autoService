@@ -18,7 +18,7 @@ export default function Hero({styles}) {
       <div className={styles.heroRight}>
         <div className={styles.carImageHero}>
           <Image
-            src="/images/bmw.png"
+            src="/images/3.png"
             fill
             sizes="100%"
             alt="Логотип нижнего колонтитула"

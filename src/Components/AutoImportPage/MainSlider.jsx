@@ -115,7 +115,7 @@ export default function MainSlider({ styles }) {
           {cards.map((card, index) => (
             <div key={index} className={`cardInfo ${selectedCardIndex === index ? "selected" : ""}`}>
               <p className={styles.cardText}>{card.text}</p>
-              <p className={styles.cardText}>{card.price}$</p>
+              <p className={styles.cardText}>{card.price} $</p>
             </div>
           ))}
         </div>
