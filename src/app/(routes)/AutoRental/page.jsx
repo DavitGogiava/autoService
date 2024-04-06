@@ -6,7 +6,7 @@ export default function AutoRental() {
   return (
     <section className={styles.autorentalWrapper}>
       <div className={styles.autorentalTitle}>
-        <h1>Найдите лучшее предложение от <span style={{color: "var(--red-col)"}}>GD</span> для вас.</h1>
+        <h1>Найдите лучшее предложение по аренде автомобилей в <span className={styles.spanCol}>GD Motors</span> для вас.</h1>
       </div>
       <CarListing styles={styles}/>
     </section>

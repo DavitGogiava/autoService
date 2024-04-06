@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.spanCol{
+  color: #ef3f25;
+}
+
 .autorentalWrapper .back {
   top: 0;
   left: 0;

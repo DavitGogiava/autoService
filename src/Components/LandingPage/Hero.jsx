@@ -5,7 +5,7 @@ export default function Hero({styles}) {
   return (
     <section className={styles.heroWrapper}>
       <div className={styles.heroTitle}>
-        <h1>Найдите автомобиль, который соответствует вашему образу жизни</h1>
+        <h1>GD Motors: ваше лучшее место для автосервиса, автоимпорта и автопроката</h1>
         <p>
           Просмотрите наш выбор импортных автомобилей, чтобы найти идеальный
           вариант для вас.
