@@ -11,27 +11,27 @@ export default function MainSlider({ styles }) {
     {
       imageSrc: "/images/1.png",
       text: "Mercedes-Benz C 300, 2018",
-      price: "100",
+      price: "40000",
     },
     {
       imageSrc: "/images/2.png",
       text: "Audi A5, 2019",
-      price: "200",
+      price: "50000",
     },
     {
       imageSrc: "/images/3.png",
       text: "Audi RS5, 2019",
-      price: "300",
+      price: "50000",
     },
     {
       imageSrc: "/images/4.png",
       text: "Toyota RAV4, 2021",
-      price: "300",
+      price: "60000",
     },
     {
       imageSrc: "/images/5.png",
       text: "Toyota RAV4, 2020",
-      price: "300",
+      price: "40000",
     },
   ];
   const handleNext = () => {

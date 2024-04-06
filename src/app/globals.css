@@ -4,14 +4,13 @@
 }
 
 @font-face {
-  font-family: 'Noir';
-  src: url('NoirPro-Regular.otf');
+  font-family: "Noir";
+  src: url("NoirPro-Regular.otf");
 }
 @font-face {
-  font-family: 'Noir Bold';
-  src: url('NoirPro-Bold.otf');
+  font-family: "Noir Bold";
+  src: url("NoirPro-Bold.otf");
 }
-
 
 body {
   background-color: black;
@@ -167,7 +166,7 @@ html {
   padding-top: 20px;
 }
 
-.footer-wrapper .footer-col .col-mid-section li svg{
+.footer-wrapper .footer-col .col-mid-section li svg {
   margin-right: 40px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
@@ -222,7 +221,6 @@ html {
   width: 60vh;
 }
 
-
 .cardInfo {
   position: absolute;
   display: flex;
@@ -237,8 +235,7 @@ html {
   bottom: -90px;
 }
 
-
-.cardInfo.selected{
+.cardInfo.selected {
   opacity: 1;
   bottom: 0;
 }
@@ -362,18 +359,28 @@ html {
     border-right: 2px solid rgba(99, 99, 99, 0.4);
     color: white;
     align-items: flex-start;
-    height: 40%;
+    height: 25%;
   }
+
+  .footer-wrapper .footer-col.one p{
+    margin-left: 10px;
+  }
+
   .footer-wrapper .footer-col.two {
-    display: none;
+    width: 100%;
+    height: 10%;
   }
   .footer-wrapper .footer-col.three {
     width: 100%;
-    height: 10%;
+    height: 12%;
   }
   .footer-wrapper .footer-col.four {
     width: 100%;
     height: 50%;
+  }
+  .footer-wrapper .footer-col h2 {
+    margin: 0;
+    margin-left: 10px;
   }
 
   .footer-wrapper .footer-col.one .footer-image-container {
@@ -401,5 +408,26 @@ html {
     height: 90%;
     margin-left: 5%;
     margin-top: 10px;
+  }
+
+
+
+  .cardInfo {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 15vh;
+    width: 90vw;
+    color: white;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    bottom: -90px;
+  }
+  
+  .cardInfo.selected {
+    opacity: 1;
+    bottom: 0;
   }
 }

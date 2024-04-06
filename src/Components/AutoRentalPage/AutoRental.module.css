@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.spanCol{
+.spanCol {
   color: #ef3f25;
 }
 
@@ -90,4 +90,85 @@
   margin: 0;
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .autorentalWrapper .back {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url("../../../public/images/hero.png");
+    background-position: center;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+
+  .autorentalTitle {
+    width: 90vw;
+    height: 20vh;
+    color: white;
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+  }
+
+  .carlistingWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    height: 100%; /* 150 viewport height */
+    width: 90vw; /* 90 viewport width */
+    gap: 5vw; /* Gap between grid items */
+    margin-bottom: 10vh;
+  }
+
+  .carlistingWrapper .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .item .circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #ef3f25;
+    border-radius: 50%;
+    top: -20px;
+    right: -20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .item img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+
+  .item .carDetails {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .item .carDetails p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
