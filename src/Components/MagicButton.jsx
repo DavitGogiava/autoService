@@ -10,8 +10,7 @@ export default function MagicButton({ color, text }) {
           src={`/images/arrow-${color === "red" ? "black" : "white"}.png`}
           height={30}
           width={30}
-          alt="arrow"
-          className="right arrow"
+          alt="значок стрелки"
         />
       </button>
     );

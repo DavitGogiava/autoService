@@ -1,0 +1,334 @@
+/* HERO */
+.landingWrapper {
+  position: relative;
+  height: 100%;
+  background-color: black;
+  width: 100vw;
+}
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../../public/images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroWrapper .heroTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.heroRight .carImageHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.carImageHero img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.heroWrapper .heroTitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 50vw;
+  margin-left: 40px;
+}
+
+.heroWrapper .heroTitle h1 {
+  color: white;
+  font-size: 55px;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.heroWrapper .heroTitle p {
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.heroWrapper .heroTitle .buttonWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+/* Landing Catalogue */
+
+.landingWrapper .catalogueWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.catalogueWrapper .catalogueContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/images/backshape.png");
+  width: 90vw;
+  height: calc(90vw * 615 / 1630);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: row;
+}
+
+.catalogueWrapper .catalogueContainer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: calc(90vw * 615 / 1630);
+}
+
+.catalogueWrapper .catalogueContainer .row:nth-child(1) {
+  width: 22.5vw;
+}
+
+.catalogueWrapper .catalogueContainer .row:nth-child(2) {
+  width: 45vw;
+}
+
+.catalogueWrapper .catalogueContainer .row:nth-child(3) {
+  width: 22.5vw;
+}
+
+.carImageContainer {
+  width: 100%;
+  position: relative;
+}
+
+.row:nth-child(1) .carImageContainer {
+  top: -12%;
+}
+.row:nth-child(2) .carImageContainer {
+  top: 0;
+}
+.row:nth-child(3) .carImageContainer {
+  bottom: -30%;
+}
+
+.carImageContainer img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.catalogueContainer .carText {
+  position: absolute;
+  font-size: 20px;
+  left: 4%;
+  top: 0;
+}
+
+.row:nth-child(2) .carText {
+  left: -47%;
+  top: auto;
+  bottom: 0;
+  color: white;
+}
+
+.catalogueContainer .arrow {
+  position: absolute;
+
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  right: 3%;
+  top: 2%;
+}
+
+.catalogueContainer .arrow:hover {
+  transform: scale(1.1);
+}
+
+/*About us*/
+
+.aboutusWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../../../public/images/must.png");
+  width: 100vw;
+  height: calc(100vw * 1080 / 1920);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutusWrapper .rightSideText {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40vw;
+  height: 100%;
+  color: white;
+
+  flex-direction: column;
+  margin-right: 5vw;
+}
+
+.aboutusWrapper .rightSideText h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.aboutusWrapper .rightSideText h3 {
+  margin: 0;
+  margin-bottom: 5vh;
+
+}
+
+@media (max-width: 768px) {
+  /*HERO*/
+
+  .heroWrapper {
+    flex-direction: column;
+    height: 100svh;
+  }
+
+  .heroWrapper .heroRight {
+    width: 90vw;
+    height: 30vh;
+  }
+
+  .heroWrapper .heroTitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 10vh;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .heroWrapper .heroTitle h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+
+  .heroWrapper .heroTitle p {
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .heroWrapper .heroTitle .buttonWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* Landing Catalogue */
+
+  .catalogueWrapper .catalogueContainer {
+    background-image: url("../../../public/images/backshape2.png");
+    height: calc(90vw * 1180 / 800);
+    flex-direction: column;
+  }
+
+  .catalogueWrapper .catalogueContainer .row {
+    height: calc(90vw * 1180 / 80);
+  }
+
+  .catalogueWrapper .catalogueContainer .row:nth-child(1) {
+    width: 90vw;
+  }
+  .catalogueWrapper .catalogueContainer .row:nth-child(2) {
+    width: 90vw;
+  }
+  .catalogueWrapper .catalogueContainer .row:nth-child(3) {
+    width: 90vw;
+  }
+
+  .carImageContainer {
+    width: 70%;
+    position: relative;
+  }
+
+  .row:nth-child(1) .carImageContainer {
+    top: 0;
+    width: 80%;
+  }
+  .row:nth-child(2) .carImageContainer {
+    top: 0;
+  }
+  .row:nth-child(3) .carImageContainer {
+    bottom: 0;
+  }
+
+  .row:nth-child(1) .carText {
+    left: 4%;
+    bottom: 3%;
+    top: auto;
+  }
+
+  .row:nth-child(2) .carText {
+    left: 4%;
+    bottom: 1%;
+    top: auto;
+  }
+
+  .row:nth-child(3) .carText {
+    left: 4%;
+    bottom: -4%;
+    top: auto;
+  }
+
+  /*ABOUT US*/
+
+  .aboutusWrapper {
+    background-image: url("../../../public/images/must2.png");
+    width: 100vw;
+    height: calc(100vw * 1280 / 800);
+    flex-direction: column;
+  }
+
+  .aboutusWrapper .rightSideText {
+    width: 95vw;
+    height: 70%;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .aboutusWrapper .rightSideText h2 {
+    font-size: 50px;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+  .aboutusWrapper .rightSideText h3 {
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}

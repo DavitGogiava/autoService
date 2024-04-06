@@ -1,67 +1,59 @@
 import Image from "next/image";
 
-export default function Catalogue() {
+export default function Catalogue({ styles }) {
   return (
-    <section className="catalogue-wrapper">
-      <div className="catalogue-container">
-        <div className="row one">
-          <h2 className="car-text one">Hatchback</h2>
+    <section className={styles.catalogueWrapper}>
+      <div className={styles.catalogueContainer}>
+        <div className={styles.row}>
+          <h2 className={styles.carText}>Хэтчбек</h2>
           <Image
             src="/images/arrow-white.png"
             height={40}
             width={40}
-            alt="arrow"
-            className="arrow one"
+            alt="значок стрелки"
+            className={styles.arrow}
           />
-          <div className="car-image-container one">
+          <div className={styles.carImageContainer}>
             <Image
               src="/images/hatchback.png"
               fill
               sizes="100%"
-              alt="Hatchback"
-              className="car one"
+              alt="Хэтчбек"
             />
           </div>
         </div>
-        <div className="row two">
-          <h2 className="car-text two">SUV</h2>
+        <div className={styles.row}>
+          <h2 className={styles.carText}>внедорожник</h2>
 
           <Image
             src="/images/arrow-black.png"
             height={40}
             width={40}
-            alt="arrow"
-            className="arrow two"
+            alt="значок стрелки"
+            className={styles.arrow}
           />
 
-          <div className="car-image-container two">
+          <div className={styles.carImageContainer}>
             <Image
               src="/images/SUV.png"
               fill
               sizes="100%"
-              alt="SUV"
-              className="car two"
+              alt="внедорожник"
             />
           </div>
         </div>
-        <div className="row three">
-          <h2 className="car-text three">Coupe</h2>
+        <div className={styles.row}>
+          <h2 className={styles.carText}>Купе</h2>
 
           <Image
             src="/images/arrow-white.png"
             height={40}
             width={40}
-            alt="arrow"
-            className="arrow three"
+            alt="значок стрелки"
+            className={styles.arrow}
           />
-          <div className="car-image-container three">
-            <Image
-              src="/images/Coupe.png"
-              fill
-              sizes="100%"
-              alt="Coupe"
-              className="car three"
-            />
+          <div className={styles.carImageContainer}>
+            <Image src="/images/Coupe.png" fill sizes="100%" alt="Купе" />
           </div>
         </div>
       </div>

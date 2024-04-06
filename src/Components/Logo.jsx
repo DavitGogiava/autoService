@@ -12,7 +12,7 @@ export default function Logo() {
           src="/images/Logo.png" // Route of the image file
           fill
           sizes="100%"
-          alt="Your Name"
+          alt="Логотип"
           onClick={() => router.push('/')}
         />
       </div>

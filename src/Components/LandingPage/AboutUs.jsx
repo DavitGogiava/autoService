@@ -1,13 +1,12 @@
-import Image from "next/image";
 import MagicButton from "../MagicButton";
 
-export default function AboutUs() {
+export default function AboutUs({styles}) {
   return (
-    <section className="aboutus-wrapper">
-      <div className="right-side-text">
-        <h2>Who <br></br>we are ? </h2>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae voluptatum accusamus corrupti ab expedita illum vel harum cupiditate aspernatur eos. Tempore pariatur nihil quo earum delectus sint, sunt voluptatem dolore!</h3>
-        <MagicButton color={"red"} text={"About Us"}/>
+    <section className={styles.aboutusWrapper}>
+      <div className={styles.rightSideText}>
+        <h2>Кто мы ? </h2>
+        <h3>Мы, <span style={{color: "#ef3f25"}}>GD Motors</span>, специализируемся на предоставлении первоклассных услуг по прокату импортных автомобилей и автосервису. Хотите ли вы арендовать автомобиль премиум-класса для путешествий или нуждаетесь в профессиональных автосервисах, мы предоставим вам все необходимое. Наша цель — сделать ваше вождение комфортным, безопасным и приятным. Благодаря широкому выбору роскошных автомобилей и экспертных услуг мы готовы удовлетворить все ваши автомобильные потребности. Доверьте нам незабываемые впечатления от вождения!</h3>
+        <MagicButton color={"red"} text={"О нас"}/>
       </div>
     </section>
   );
