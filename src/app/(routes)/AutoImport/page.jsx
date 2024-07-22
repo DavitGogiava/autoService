@@ -1,4 +1,4 @@
-import MainSlider from "@/Components/AutoImportPage/MainSlider"
+import AutoImportPage from "@/Components/AutoImportPage/AutoImportPage"
 import styles from "@/Components/AutoImportPage/AutoImport.module.css"
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
 export default function AutoImport(){
     return(
         <section className={styles.autoimportWrapper}>
-            <MainSlider styles={styles}/>
+            <AutoImportPage styles={styles}/>
         </section>
     )
 }

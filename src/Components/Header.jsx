@@ -11,7 +11,8 @@ export default function Header() {
       <Logo />
       <nav className="navigation">
         <a href="AutoImport">автоимпорт</a>
-        <a href="AutoRental">автопрокат</a>
+        <a href="AutoRental">аренда</a>
+        <a href="AutoSell">автопрокат</a>
         <a href="AutoService">автосервис</a>
         <a href="Contact">контакт</a>
       </nav>

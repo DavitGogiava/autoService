@@ -1,0 +1,157 @@
+.autoimportWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.autoimportWrapper .autoimportContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/images/autoImport.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.autoimportContainer .carsliderContainer {
+  display: flex;
+  height: 80vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.carsliderContainer .carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  width: 100vw;
+}
+
+.carousel .carContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+  justify-content: space-between;
+}
+
+.carContainer .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh; /* Adjust the height as needed */
+  color: white;
+  transition: 0.3s ease-in-out;
+  flex-direction: column;
+  margin-right: 20px;
+  flex-direction: column;
+}
+
+.title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.card .cardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.cardImage img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.cardInfoContainer {
+  position: relative;
+  height: 15vh;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.cardText {
+  font-size: 50px;
+  margin: 0;
+  color: white;
+}
+
+.carsliderContainer .carouselArr {
+  cursor: pointer;
+  fill: var(--red-col-disabled);
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  z-index: 200;
+}
+
+.carsliderContainer .carouselArr:hover {
+  fill: var(--red-col);
+}
+.carsliderContainer .carouselArr:nth-child(1) {
+  left: 0;
+}
+.carsliderContainer .carouselArr:nth-child(3) {
+  transform: rotate(180deg);
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .autoimportWrapper {
+    height: 100svh;
+  }
+
+  .autoimportWrapper .autoimportContainer {
+    height: 100svh;
+  }
+
+  .autoimportContainer .carsliderContainer {
+    height: 80svh;
+  }
+
+  .carContainer .card {
+    height: 80svh; /* Adjust the height as needed */
+  }
+  .title {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+  }
+
+  .card .cardImage {
+    width: 90%;
+    position: relative;
+    top: -40px;
+  }
+
+  .cardInfoContainer {
+    position: relative;
+    height: 25vh;
+    width: 90vw;
+    overflow: hidden;
+  }
+
+  .cardText {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+  }
+
+}
