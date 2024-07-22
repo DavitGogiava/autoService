@@ -28,32 +28,37 @@
 
 .autorentalTitle {
   width: 50vw;
-  height: 20vh;
+  height: 50vh;
   color: white;
-  font-size: 40px;
+  font-size: 5.5vh;
   align-self: flex-start;
-  margin-left: 5vw;
-  margin-bottom: 20vh;
+  margin: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .carlistingWrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, 1fr); /* 4 rows */
-  height: 100vh; /* 150 viewport height */
-  width: 90vw; /* 90 viewport width */
-  gap: 3vw; /* Gap between grid items */
-  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .carlistingWrapper .item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   background-color: rgb(209, 209, 209);
-  border-radius: 10px;
-  flex-direction: column;
+  width: 90vw;
+  height: 45vh;
+  margin-bottom: 5vh;
+  z-index: 998;
   position: relative;
+  border-radius: 5px;
 }
 
 .item .circle {
@@ -71,25 +76,68 @@
   font-weight: bold;
 }
 
+.item .imgContainer {
+  display: flex;
+  width: 30%;
+  height: 90%;
+  position: relative;
+}
+
 .item img {
   object-fit: contain;
   width: 100% !important;
-  position: relative !important;
-  height: unset !important;
+  height: 100% !important;
 }
 
 .item .carDetails {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
-  width: 90%;
+  flex-direction: row;
+  width: 60%;
+  margin-left: 3vw;
+  height: 80%;
 }
 
-.item .carDetails p {
+.item .carDetails .carMainDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 45%;
+}
+.item .carDetails .carSecondaryDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 45%;
+}
+
+
+.item .carDetails .carMainDetails p {
   margin: 0;
-  font-size: 20px;
+  font-size: 2.7vh;
   font-weight: bold;
+}
+
+.item .carDetails .carMainDetails .carYear {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 3.2vh;
+}
+
+.item .carPrice {
+  font-size: 3.2vh;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.item .carDetails .carMainDetails .CabrioletY{
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

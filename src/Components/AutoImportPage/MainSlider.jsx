@@ -10,29 +10,24 @@ export default function MainSlider({ styles }) {
   const cards = [
     {
       imageSrc: "/images/1.png",
-      text: "Mercedes-Benz C 300, 2018",
-      price: "40000",
+      text: "Audi Q3, 2021",
+      price: "31 000",
     },
     {
       imageSrc: "/images/2.png",
-      text: "Audi A5, 2019",
-      price: "50000",
+      text: "Volkswagen Atlas, 2022",
+      price: "22 000",
     },
     {
       imageSrc: "/images/3.png",
-      text: "Audi RS5, 2019",
-      price: "50000",
+      text: "BMW M4, 2023",
+      price: "88 000",
     },
     {
       imageSrc: "/images/4.png",
-      text: "Toyota RAV4, 2021",
-      price: "60000",
-    },
-    {
-      imageSrc: "/images/5.png",
-      text: "Toyota RAV4, 2020",
-      price: "40000",
-    },
+      text: "Audi RS5, 2015",
+      price: "53 000",
+    }
   ];
   const handleNext = () => {
     setPosition((prevPosition) => Math.min(prevPosition + 1, cards.length - 1));
