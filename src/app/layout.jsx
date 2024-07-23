@@ -1,6 +1,7 @@
 import Footer from "@/Components/Footer";
 import "./globals.css";
 import Header from "@/Components/Header";
+import Image from "next/image";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"),
@@ -15,6 +16,18 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
+        <div className="floater">
+          <div className="floatleft">
+            <Image
+              src="/images/Telegram.webp"
+              fill
+              sizes="100%"
+              alt="Telegram"
+            />
+          </div>
+          <div className="floatright">связаться с нами</div>
+        </div>
+
         <Footer />
       </body>
     </html>

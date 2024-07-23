@@ -1,0 +1,81 @@
+.AutoServicePageWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  background-image: url("../../../public/images/AutoService/back.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.AutoServicePageWrapper .AutoServicePageContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-bottom: 5vhf;
+}
+
+.headline {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  font-size: 8vh;
+  margin-bottom: 5vh;
+}
+
+
+.spanCol {
+  color: #ef3f25;
+  margin-right: 15px;
+}
+
+
+.AutoServicePageContainer .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+
+.card .left{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.left p{
+    font-size: 8vh;
+}
+
+.card .rightImgCont{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.rightImgCont img{
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+}
