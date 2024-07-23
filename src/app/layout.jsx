@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        <div className="floater">
+        <a className="floater" href="https://t.me/gd_motors_ge">
           <div className="floatleft">
             <Image
               src="/images/Telegram.webp"
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             />
           </div>
           <div className="floatright">связаться с нами</div>
-        </div>
+        </a>
 
         <Footer />
       </body>

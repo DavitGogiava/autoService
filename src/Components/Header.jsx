@@ -14,7 +14,7 @@ export default function Header() {
         <a href="AutoRental">аренда</a>
         <a href="AutoSell">автопрокат</a>
         <a href="AutoService">автосервис</a>
-        <a href="Contact">контакт</a>
+        <a href="ContactUs">контакт</a>
       </nav>
       <HamburgerMenu />      
     </header>
