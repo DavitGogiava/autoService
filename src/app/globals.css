@@ -94,6 +94,7 @@ html {
   animation: float 6s ease-in-out infinite;
   cursor: pointer;
   z-index: 99999;
+  text-decoration: none;
 }
 
 .floater .floatleft{
