@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export const metadata = {
   metadataBase: new URL("http://localhost:3000"),
-  title: "GD Motors автосервисная компания",
+  title: "Foo Motors is an auto service company.",
   description:
-    "Добро пожаловать в GD Motors, универсальное место для всех ваших автомобильных потребностей. Мы специализируемся на автосервисе, импорте автомобилей и услугах по аренде автомобилей. Если вам нужно регулярное техническое обслуживание, помощь с импортом автомобиля или надежный прокат автомобилей, наша опытная команда всегда готова помочь. Доверьтесь GD Motors и получите исключительный сервис и опыт в автомобильной промышленности. Свяжитесь с нами сегодня, чтобы узнать больше!",
+    "Welcome to Foo Motors, your one-stop shop for all your automotive needs. We specialize in auto service, car imports, and car rentals. Whether you need regular maintenance, assistance with importing a car, or reliable car rental services, our experienced team is always ready to help. Trust Foo Motors for exceptional service and experience in the automotive industry. Contact us today to learn more!",
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        <a className="floater" href="https://t.me/gd_motors_ge">
+        <a className="floater" href="">
           <div className="floatleft">
             <Image
               src="/images/Telegram.webp"
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
               alt="Telegram"
             />
           </div>
-          <div className="floatright">связаться с нами</div>
+          <div className="floatright">Contact Us</div>
         </a>
 
         <Footer />

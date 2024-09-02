@@ -6,41 +6,41 @@ export default function CarListing({ styles }) {
       imageSrc: "/images/z1.png",
       text: "Mercedes-Benz C 300",
       prices: [
-        "1-5 дней – 600",
-        "5-8 дней – 550",
-        "8-15 дней – 500",
-        "15-30 дней – 300",
+        "1-5 days – 600",
+        "5-8 days – 550",
+        "8-15 days – 500",
+        "15-30 days – 300",
       ],
       year: "2018",
       range: "124000",
       Engine: "2.0",
       Cabriolet: true,
       Details:
-        "AMG пакет (Диски, салон, обвес). Камера кругового обзора 360*, сиденья со всеми регулировками и подогревом, led- фары, музыка Burmester.",
+        "AMG package (wheels, interior, body kit). 360° surround view camera, seats with full adjustments and heating, LED headlights, Burmester audio system.",
     },
     {
       imageSrc: "/images/z2.png",
       text: "Mercedes E400",
       prices: [
-        "1-5 дней – 450",
-        "5-8 дней – 400",
-        "8-15 дней – 300",
-        "15-30 дней – 220",
+        "1-5 days – 450",
+        "5-8 days – 400",
+        "8-15 days – 300",
+        "15-30 days – 220",
       ],
       year: "2014",
       range: "106400",
       Engine: "3.0",
       Cabriolet: true,
-      Details: "Аудио система Harman Kardon",
+      Details: "Harman Kardon audio system",
     },
     {
       imageSrc: "/images/z3.png",
       text: "BMW 228i",
       prices: [
-        "1-5 дней – 400",
-        "5-8 дней – 350",
-        "8-15 дней – 250",
-        "15-30 дней – 150",
+        "1-5 days – 400",
+        "5-8 days – 350",
+        "8-15 days – 250",
+        "15-30 days – 150",
       ],
       year: "2015",
       range: "179000",
@@ -52,10 +52,10 @@ export default function CarListing({ styles }) {
       imageSrc: "/images/z4.png",
       text: "Audi A5",
       prices: [
-        "1-5 дней – 500",
-        "5-8 дней – 450",
-        "8-15 дней – 350",
-        "15-30 дней – 250",
+        "1-5 days – 500",
+        "5-8 days – 450",
+        "8-15 days – 350",
+        "15-30 days – 250",
       ],
       year: "2018",
       range: "84000",
@@ -77,11 +77,11 @@ export default function CarListing({ styles }) {
             <div className={styles.carMainDetails}>
               <div className={styles.circle}>{card.year}</div>
               <p className={styles.carYear}>{card.text}</p>
-              <p className={styles.carName}>Тбилиси, Грузия</p>
-              <p className={styles.carRange}>Пробег: {card.range} км</p>
-              <p className={styles.carEngine}>Двигатель: {card.Engine} л</p>
+              <p className={styles.carName}>Tbilisi, Georgia</p>
+              <p className={styles.carRange}>Mileage: {card.range} KM</p>
+              <p className={styles.carEngine}>Engine: {card.Engine} L</p>
               <p className={styles.CabrioletY}>
-                Кабриолет: {card.Cabriolet ? "Да" : "Нет"}
+                Cabriolet: {card.Cabriolet ? "Yes" : "No"}
               </p>
               {card.Details && (
                 <p className={styles.carAdditionalDetails}>{card.Details}</p>

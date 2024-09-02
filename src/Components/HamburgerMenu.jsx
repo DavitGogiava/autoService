@@ -5,18 +5,18 @@ export default function HamburgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuOpen = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggles the value of isMenuOpen
+    setIsMenuOpen(!isMenuOpen);
   };
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
+      document.body.style.overflow = "hidden"; 
     } else {
-      document.body.style.overflow = ""; // Enable scrolling
+      document.body.style.overflow = ""; 
     }
 
     return () => {
-      document.body.style.overflow = ""; // Enable scrolling when component unmounts
+      document.body.style.overflow = ""; 
     };
   }, [isMenuOpen]);
   return (
@@ -50,10 +50,10 @@ export default function HamburgerMenu() {
         </svg>
       </div>
       <nav className={`hamburger-nav ${isMenuOpen ? "active" : ""}`}>
-        <a href="AutoImport">автоимпорт</a>
-        <a href="AutoRental">автопрокат</a>
-        <a href="AutoService">автосервис</a>
-        <a href="Contact">контакт</a>
+        <a href="AutoImport">Import</a>
+        <a href="AutoRental">Sell</a>
+        <a href="AutoService">Service</a>
+        <a href="Contact">Contact</a>
       </nav>
     </div>
   );

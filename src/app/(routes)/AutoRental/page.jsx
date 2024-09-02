@@ -10,8 +10,8 @@ export default function AutoRental() {
     <section className={styles.autorentalWrapper}>
       <div className={styles.autorentalTitle}>
         <h1>
-          Найдите лучшее предложение по аренде автомобилей в{" "}
-          <span className={styles.spanCol}>GD Motors</span> для вас.
+        Find The Best Car Rental Offer At{" "}
+          <span className={styles.spanCol}>Foo Motors</span> For You.
         </h1>
       </div>
       <CarListing styles={styles} />

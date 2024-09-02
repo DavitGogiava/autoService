@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "GD Motors автосервис",
+  title: "Foo Motors Auto Service",
   description:
-    "В GD Motors мы гордимся тем, что предлагаем широкий спектр автосервисов для поддержания вашего автомобиля в отличном состоянии. От планового технического обслуживания, такого как замена масла и шин, до сложного ремонта, наши квалифицированные специалисты обладают опытом, позволяющим справиться со всем этим. GD Motors, стремясь к качеству и удовлетворению потребностей клиентов, является вашим надежным партнером по всем вашим потребностям в автосервисе. Свяжитесь с нами сегодня, чтобы назначить встречу и ощутить разницу от GD Motors!",
+    "Get expert car care at Foo Motors Auto Service. Our skilled technicians provide top-quality maintenance and repairs for all vehicle types. From routine oil changes to complex diagnostics, we ensure your car stays in peak condition. Trust us for reliable service and customer satisfaction.",
 };
-export default function layodut({ children }) {
+export default function layout({ children }) {
   return <>{children}</>;
 }

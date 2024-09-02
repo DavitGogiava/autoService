@@ -1,9 +1,9 @@
 export const metadata = {
-    title: "GD Motors автоимпорт",
+    title: "Foo Motors Auto Import",
     description:
-      "В GD Motors мы специализируемся на том, чтобы помочь вам импортировать автомобиль вашей мечты. Наша опытная команда проведет вас через процесс импорта, гарантируя беспрепятственный и беспроблемный процесс. Если вы ищете конкретную марку или модель, недоступную на местном уровне, или ищете экономичный способ приобретения автомобиля, GD Motors всегда готова вам помочь. Свяжитесь с нами сегодня, чтобы узнать больше о наших услугах по импорту автомобилей и начать свой путь к обладанию идеальным автомобилем!",
+      "Discover premium imported vehicles at Foo Motors AutoImport. We specialize in luxury cars, SUVs, and electric vehicles, offering top-notch import services tailored to your needs. Explore our extensive collection and learn how we make importing your dream car easy and hassle-free.",
   };
-  export default function layodut({ children }) {
+  export default function layout({ children }) {
     return <>{children}</>;
   }
   

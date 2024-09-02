@@ -4,57 +4,57 @@ export default function AutoServicePage({ styles }) {
   const cards = [
     {
       imageSrc: "/images/AutoService/1.webp",
-      text: "Кузовной ремонт",
+      text: "Bodywork repair",
     },
     {
       imageSrc: "/images/AutoService/2.webp",
-      text: "Покраска авто",
+      text: "Car painting",
     },
     {
       imageSrc: "/images/AutoService/3.webp",
-      text: "Полировка авто",
+      text: "Car polishing",
     },
     {
       imageSrc: "/images/AutoService/4.webp",
-      text: "Ремонт ходовой части",
+      text: "Suspension repair",
     },
     {
       imageSrc: "/images/AutoService/5.webp",
-      text: "Ремонт двигателей",
+      text: "Engine repair",
     },
     {
       imageSrc: "/images/AutoService/6.webp",
-      text: "Заправка кондиционара",
+      text: "Air conditioning recharge",
     },
     {
       imageSrc: "/images/AutoService/7.webp",
-      text: "Компютерная диагностика",
+      text: "Computer diagnostics",
     },
     {
       imageSrc: "/images/AutoService/8.webp",
-      text: "Ремонт электрики",
+      text: "Electrical repair",
     },
     {
       imageSrc: "/images/AutoService/9.webp",
-      text: "Развал-схождение",
+      text: "Wheel alignment",
     },
     {
       imageSrc: "/images/AutoService/10.webp",
-      text: "Подбор запчастей",
+      text: "Parts selection",
     },
     {
       imageSrc: "/images/AutoService/11.webp",
-      text: "Мойка радиаторов",
+      text: "Radiator cleaning",
     },
     {
       imageSrc: "/images/AutoService/12.webp",
-      text: "Комплексная диагностика",
+      text: "Comprehensive diagnostics",
     },
   ];
   return (
     <div className={styles.AutoServicePageContainer}>
       <h1 className={styles.headline}>
-        <span className={styles.spanCol}>GD Motors</span>автосервис
+        <span className={styles.spanCol}>Foo Motors</span>Auto Service
       </h1>
       {cards.map((card, index) => (
         <div key={index} className={styles.card}>

@@ -50,7 +50,7 @@ export default function MainSlider({ styles }) {
 
   return (
     <div className={styles.autoimportContainer}>
-      <p className={styles.title}>твоя машина премиум-класса</p>
+      <p className={styles.title}>Your premium-class car</p>
 
       <div className={styles.carsliderContainer}>
         <svg

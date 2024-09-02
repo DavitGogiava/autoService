@@ -10,11 +10,11 @@ export default function Header() {
     <header className="header-wrapper">
       <Logo />
       <nav className="navigation">
-        <a href="AutoImport">автоимпорт</a>
-        <a href="AutoRental">аренда</a>
-        <a href="AutoSell">автопрокат</a>
-        <a href="AutoService">автосервис</a>
-        <a href="ContactUs">контакт</a>
+        <a href="AutoImport">Import</a>
+        <a href="AutoRental">Rental</a>
+        <a href="AutoSell">Sell</a>
+        <a href="AutoService">Service</a>
+        <a href="ContactUs">Contact</a>
       </nav>
       <HamburgerMenu />      
     </header>

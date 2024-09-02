@@ -4,10 +4,10 @@ export default function ContactUsPage({ styles }) {
   return (
     <div className={styles.ContactUsPageContainer}>
       <h1 className={styles.ContactTitle}>
-        Свяжитесь с нами в социальных сетях
+        Follow us on social medias
       </h1>
       <div className={styles.SocialMedias}>
-        <a href="https://www.facebook.com/profile.php?id=61557604335120">
+        <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -22,7 +22,7 @@ export default function ContactUsPage({ styles }) {
             ></path>
           </svg>
         </a>
-        <a href="https://www.instagram.com/gd_motors_ge/">
+        <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -37,7 +37,7 @@ export default function ContactUsPage({ styles }) {
             ></path>
           </svg>
         </a>
-        <a href="https://t.me/gd_motors_ge">
+        <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -52,7 +52,7 @@ export default function ContactUsPage({ styles }) {
             ></path>
           </svg>
         </a>
-        <a href="https://www.youtube.com/@GDMOTORS-mt5ds">
+        <a href="">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

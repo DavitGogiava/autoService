@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "GD Motors автопрокат",
+  title: "Foo Motors Auto Rental",
   description:
-    "Откройте для себя свободу дорог с услугой проката автомобилей GD Motors. Если вам нужен надежный автомобиль для поездки на выходные или просторный автомобиль для семейного путешествия, мы предоставим вам все необходимое. Благодаря широкому выбору автомобилей в хорошем состоянии, конкурентоспособным ценам и гибким условиям аренды GD Motors делает аренду автомобиля простой и удобной. Свяжитесь с нами сегодня, чтобы зарезервировать автомобиль и начать свое путешествие!",
+    "Rent premium vehicles with ease at Foo Motors Auto Rental. Choose from our wide range of luxury cars, SUVs, and more for any occasion. Enjoy competitive rates, flexible rental terms, and exceptional customer service to enhance your driving experience.",
 };
-export default function layodut({ children }) {
+export default function layout({ children }) {
   return <>{children}</>;
 }

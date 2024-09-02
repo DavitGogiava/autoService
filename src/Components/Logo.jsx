@@ -9,10 +9,10 @@ export default function Logo() {
     return(
         <div className="logo">
         <Image
-          src="/images/Logo.png" // Route of the image file
+          src="/images/Logo1.png" 
           fill
           sizes="100%"
-          alt="Логотип"
+          alt="Logo"
           onClick={() => router.push('/')}
         />
       </div>

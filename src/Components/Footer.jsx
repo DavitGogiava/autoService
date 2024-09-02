@@ -11,28 +11,28 @@ export default function Footer() {
       <section className="footer-col one">
         <div className="footer-image-container">
           <Image
-            src="/images/FooterLogo.png"
+            src="/images/FooterLogo1.png"
             fill
             sizes="100%"
-            alt="Нижний колонтитул"
+            alt="Footer Logo"
           />
         </div>
         <p>
-          Мы, <span style={{ color: "#ef3f25" }}>GD Motors</span>,
-          специализируемся на предоставлении первоклассных услуг по прокату
-          импортных автомобилей и автосервису
+          We, at <span style={{ color: "#ef3f25" }}>Foo Motors</span>,
+          specialize in providing top-notch car rental services for imported vehicles and auto service.
         </p>
       </section>
       <section className="footer-col two">
-        <h2>Общий</h2>
+        <h2>General</h2>
         <ul className="col-mid-section">
-          <li>автоимпорт</li>
-          <li>автопрокат</li>
-          <li>автосервис</li>
+          <li>Import</li>
+          <li>Rental</li>
+          <li>Sell</li>
+          <li>Service</li>
         </ul>
       </section>
       <section className="footer-col three">
-        <h2>Социальное</h2>
+        <h2>Socials</h2>
         <ul className="col-mid-section">
           <li>
             <svg
@@ -93,7 +93,7 @@ export default function Footer() {
         </ul>
       </section>
       <section className="footer-col four">
-        <h2>Расположение</h2>
+        <h2>Location</h2>
         <Map />
       </section>
     </footer>

@@ -5,14 +5,13 @@ export default function Hero({styles}) {
   return (
     <section className={styles.heroWrapper}>
       <div className={styles.heroTitle}>
-        <h1>GD Motors: ваше лучшее место для автосервиса, автоимпорта и автопроката</h1>
+        <h1>Foo Motors: Your Best Destination for Auto Service, Auto Import, and Auto Rental.</h1>
         <p>
-          Просмотрите наш выбор импортных автомобилей, чтобы найти идеальный
-          вариант для вас.
+          Browse our selection of imported cars to find the perfect option for you.
         </p>
         <div className={styles.buttonWrapper}>
-          <MagicButton color={"red"} text={"все автомобили"} />
-          <MagicButton color={"white"} text={"Связаться с нами"} />
+          <MagicButton color={"red"} text={"All Cars"} />
+          <MagicButton color={"white"} text={"Contact Us"} />
         </div>
       </div>
       <div className={styles.heroRight}>
@@ -21,7 +20,7 @@ export default function Hero({styles}) {
             src="/images/3.png"
             fill
             sizes="100%"
-            alt="Логотип нижнего колонтитула"
+            alt="Logo BMW"
           />
         </div>
       </div>
